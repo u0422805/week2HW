@@ -22,11 +22,18 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("首頁", "Index", "Home")</li>
-                    <li>@Html.ActionLink("關於", "About", "Home")</li>
-                    <li>@Html.ActionLink("連絡方式", "Contact", "Home")</li>
+                    <li><a href="/">首頁</a></li>
+                    <li><a href="/Home/About">關於</a></li>
+                    <li><a href="/Home/Contact">連絡方式</a></li>
+                    <li><a href="/%E5%AE%A2%E6%88%B6%E8%B3%87%E6%96%99">客戶資料管理</a></li>
+                    <li><a href="/%E5%AE%A2%E6%88%B6%E8%81%AF%E7%B5%A1%E4%BA%BA">聯絡人管理</a></li>
+                    <li><a href="/%E5%AE%A2%E6%88%B6%E9%8A%80%E8%A1%8C%E8%B3%87%E8%A8%8A">銀行資料管理</a></li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                    <ul class="nav navbar-nav navbar-right">
+        <li><a href="/Account/Register" id="registerLink">註冊</a></li>
+        <li><a href="/Account/Login" id="loginLink">登入</a></li>
+    </ul>
+
             </div>
         </div>
     </div>
